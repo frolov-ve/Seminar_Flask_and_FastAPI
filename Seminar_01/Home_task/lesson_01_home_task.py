@@ -10,18 +10,38 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def base():
-	return render_template('base.html')
+def base_hw():
+	return render_template('base_hw.html')
 
 
-@app.route('/about/')
-def about():
-	return render_template('about.html')
+@app.route('/about_hw/')
+def about_hw():
+	return render_template('about_hw.html')
 
 
-@app.route('/contact/')
-def contact():
-	return render_template('contact.html')
+@app.route('/contacts_hw/')
+def contacts_hw():
+	return render_template('contacts_hw.html')
+
+
+@app.route('/main_hw/')
+def main_hw():
+	return render_template('main_hw.html')
+
+
+@app.route('/jacket_hw/')
+def jacket_hw():
+	return render_template('jacket_hw.html')
+
+
+@app.route('/clothes_hw/')
+def clothes_hw():
+	return render_template('clothes_hw.html')
+
+
+@app.route('/shoes_hw/')
+def shoes_hw():
+	return render_template('shoes_hw.html')
 
 
 if __name__ == '__main__':

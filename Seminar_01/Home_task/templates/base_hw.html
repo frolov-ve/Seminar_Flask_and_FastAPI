@@ -8,45 +8,52 @@
     <link rel="stylesheet" href="/static/css/style_hw.css">
     <title>
         {% block title %}
-        Мой сайт
+        Интернет-магазин "Доступно всем"
         {% endblock %}
     </title>
 </head>
 <body>
 <header>
-    <img src="logo.png" alt="Логотип">
+    <img src="/static/images/Available_to_you.jpeg" alt="Логотип">
     <nav>
         <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Портфолио</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="/main_hw/">Главная</a></li>
+            <li><a href="/about_hw/">О нас</a></li>
+            <li><a href="/clothes_hw/">Повседневная одежда</a></li>
+            <li><a href="/jacket_hw/">Куртки</a></li>
+            <li><a href="/shoes_hw/">Обувь</a></li>
         </ul>
+        <hr>
     </nav>
 </header>
-
-<div class="container-fluid">
-    <ul class="nav nav-pills justify-content-end align-items-end">
-        <li class="nav-item"><a href="/clothes_hw/"
-                                class="nav-link">Летняя одежда для всей семьи</a></li>
-        <li class="nav-item"><a href="/jacket_hw/"
-                                class="nav-link">Верхняя одежда</a></li>
-        <li class="nav-item"><a href="/shoes_hw/"
-                                class="nav-link">Обувь для больших и взрослых</a></li>
-        <li class="nav-item"><a href="/shoes_hw/"
-                                class="nav-link">Обувь для больших и взрослых</a></li>
-    </ul>
-    {% block content %}
-    Страница не заполнена
-    {% endblock %}
-</div>
+<main>
+    <div class="container-fluid">
+        <ul class="nav nav-pills justify-content-end align-items-end">
+            <li class="nav-item"><a href="/clothes_hw/"
+                                    class="nav-link">Повседневная одежда для всей семьи</a></li>
+            <li class="nav-item"><a href="/jacket_hw/"
+                                    class="nav-link">Верхняя одежда</a></li>
+            <li class="nav-item"><a href="/shoes_hw/"
+                                    class="nav-link">Обувь для больших и взрослых</a></li>
+            <li class="nav-item"><a href="/contacts_hw/"
+                                    class="nav-link">Контакты</a></li>
+            <li class="nav-item"><a href="/about_hw/"
+                                    class="nav-link">О нас</a></li>
+            <li class="nav-item"><a href="/main_hw/"
+                                    class="nav-link">Главная</a></li>
+        </ul>
+        {% block content %}
+        Страница не заполнена
+        {% endblock %}
+    </div>
+</main>
 <footer>
-    <p>Copyright (c) 2024. Все права защищены.</p>
-    <ul>
-        <li><a href="#">Контакты</a></li>
-    </ul>
-</footer>
+    <hr>
 
+    <p>Copyright (c) 2024. Все права защищены.</p>
+
+    <p><a href="/contacts_hw/">Контакты</a></p>
+
+</footer>
 </body>
 </html>

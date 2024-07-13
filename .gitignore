@@ -155,7 +155,6 @@ dmypy.json
 cython_debug/
 
 # pictures
-Available_to_you.jpeg
 .jpg
 .jpeg
 .png
